@@ -1,0 +1,5 @@
+DROP TABLE IF EXISTS student;
+CREATE TABLE student (ID bigint (20), password varchar(255), token varchar(255), user_name VARCHAR(255));
+INSERT INTO student VALUES(1, 'lfpw', 'lftoken', 'lfun');
+INSERT INTO student VALUES(2, 'bhpw', 'bhtoken', 'bhun');
+SELECT * FROM student; 
