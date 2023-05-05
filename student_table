@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS student;
+CREATE TABLE student (ID bigint (20), password varchar(255), token varchar(255), user_name VARCHAR(255));
+INSERT INTO student VALUES(1, 'lfpw', 'lftoken', 'lfun');
+SELECT * FROM student;
+CREATE TABLE students (ID bigint (20), student_id varchar(255), token varchar(255), email VARCHAR(255), dateof_birth varchar(255), last_name varchar(255), first_name varchar(255));
+INSERT INTO students VALUES(1, '123456789', 'lftoken', 'gmail', '05/22', 'Boylan', 'Joseph');
+SELECT * FROM students;
+CREATE TABLE course (ID bigint (20), coursenumber varchar(255), token varchar(255), course_name VARCHAR(255));
+INSERT INTO course VALUES(1, 'Software Safety', 'lftoken', 'EN.605');
+SELECT * FROM course;
+CREATE TABLE registrar (ID bigint (20), studentid varchar(255), token varchar(255), course_number VARCHAR(255));
+INSERT INTO registrar VALUES(1, '1234567', 'lftoken', 'EN.605.704');
+SELECT * FROM registrar;
